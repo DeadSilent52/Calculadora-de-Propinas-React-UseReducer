@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+# Calculadora de Propinas con React + TypeScript + Vite + UseReducer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/116d35a2-1d4e-43b4-9659-df10fef8bf8d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este proyecto es una aplicación interactiva que permite calcular propinas, la cual esta desarrollada con React y TypeScript usando UseReducer, tambien se utilizo el framework Tailwind para diseñar una interfaz moderna y eficiente. Maneja estados con useState y optimiza el rendimiento con useMemo y useCallback. Contiene un hook que permite mejorar la eficiencia de la aplicación.
 
-## Expanding the ESLint configuration
+## Funcionalidades
+- **Agregar ordenes:** Permite al usuario añadir diferentes productos al pedido, seleccionando los ítems deseados.
+- **Incrementar cantidades:** Facilita la modificación de la cantidad de cada producto en la orden sin necesidad de eliminarlo y volver a agregarlo.
+- **Agregar propinas:** Ofrece la opción de incluir una propina, calculada en función del subtotal de la orden.
+- **Calcular subtotal y total:** Muestra en tiempo real el costo total del pedido, incluyendo la suma de los productos y la propina seleccionada.
+- **Reiniciar orden:** Permite restablecer la orden a su estado inicial, eliminando todos los productos y configuraciones de propina.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías Utilizadas
+-React
+-TypeScript
+-Vite
+-Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Despliegue
+https://p-calculadora-propinas-usereducer.netlify.app/
